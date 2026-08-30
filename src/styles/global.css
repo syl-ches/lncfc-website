@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   FARNHAM DISPLAY
+   ========================================================================== */
+
+@font-face {
+  font-family: "Farnham Display";
+  src: url("/fonts/fonnts.com-Farnham-Display-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Farnham Display";
+  src: url("/fonts/fonnts.com-Farnham-Display-.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Farnham Display";
+  src: url("/fonts/fonnts.com-Farnham-Display-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Farnham Display";
+  src: url("/fonts/fonnts.com-Farnham-Display-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ==========================================================================
+   FARNHAM HEADLINE
+   ========================================================================== */
+
+@font-face {
+  font-family: "Farnham Headline";
+  src: url("/fonts/fonnts.com-Farnham-Headline-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Farnham Headline";
+  src: url("/fonts/fonnts.com-Farnham-Headline-Semi-Light.otf") format("opentype");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Farnham Headline";
+  src: url("/fonts/fonnts.com-Farnham-Headline-.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Farnham Headline";
+  src: url("/fonts/fonnts.com-Farnham-Headline-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Farnham Headline";
+  src: url("/fonts/fonnts.com-Farnham-Headline-Semi-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Farnham Headline";
+  src: url("/fonts/fonnts.com-Farnham-Headline-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ==========================================================================
+   FARNHAM TEXT
+   ========================================================================== */
+
+@font-face {
+  font-family: "Farnham Text";
+  src: url("/fonts/fonnts.com-Farnham-Text-.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Farnham Text";
+  src: url("/fonts/fonnts.com-Farnham-Text-Semi-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ==========================================================================
+   DESIGN TOKENS
+   ========================================================================== */
+
+:root {
+  /* Fonts */
+  --font-text: "Farnham Text", serif;
+  --font-headline: "Farnham Headline", serif;
+  --font-display: "Farnham Display", serif;
+
+  /* Colors */
+  --color-primary: #1E183C;
+  --color-white-background: #FFFFFF;
+  --color-text-black: #000000;
+  --color-text-white: #FFFFFF;
+  --color-highlight-yellow: #E3A743;
+  --color-highlight-blue: #311F89;
+
+  /* Typography */
+  --text-h1: 68px;
+  --text-h2: 48px;
+  --text-h3: 36px;
+  --text-h4: 28px;
+}
+
+
+/* ==========================================================================
+   TAILWIND THEME
+   ========================================================================== */
+
+@theme {
+  /* Fonts */
+  --font-text: "Farnham Text", serif;
+  --font-headline: "Farnham Headline", serif;
+  --font-display: "Farnham Display", serif;
+
+  /* Colors */
+  --color-primary: #1E183C;
+  --color-white-background: #FFFFFF;
+  --color-text-black: #000000;
+  --color-text-white: #FFFFFF;
+  --color-highlight-yellow: #E3A743;
+  --color-highlight-blue: #311F89;
+
+  /* Typography */
+  --text-h1: 68px;
+  --text-h2: 48px;
+  --text-h3: 36px;
+  --text-h4: 28px;
+}
+
+
+/* ==========================================================================
+   GLOBAL STYLES
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-text);
+  background-color: var(--color-white-background);
+  color: var(--color-text-black);
+}
+
+body {
+  margin: 0;
+}
