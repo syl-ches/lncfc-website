@@ -1,17 +1,217 @@
 ---
-
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar.astro";
+import Button from '../components/Button.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="LNCFC | LNCFC Website">
+  <Navbar />
+
+  <!-- Hero Section -->
+  <div class="relative w-full min-h-[720px] flex flex-col items-center justify-center overflow-hidden bg-black">
+    <img 
+      src="/images/home-hero.png" 
+      alt="LNCFC Hero Background" 
+      class="absolute inset-0 w-full h-full object-cover z-0 opacity-60" 
+    />
+
+    <main class="relative z-10 px-6 text-center">
+      <h1 
+        style="color: var(--color-text-white);" 
+        class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-8"
+      >
+        Applications for LNCFC 2026 are Open
+      </h1>
+      <h4 
+        style="color: var(--color-text-white);" 
+        class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]"
+      >
+        Let our harmonies be one light with the North!
+      </h4>
+    </main>
+  </div>
+
+  <!-- About Section (35% / 65% Grid) -->
+  <section class="w-full bg-white-background py-24 px-6 sm:px-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[35%_65%] gap-8 lg:gap-12 items-center">
+      
+      <div class="w-full flex justify-center">
+        <img 
+          src="/images/light-of-the-north.png" 
+          alt="LNCFC Event" 
+          class="w-full h-auto object-cover shadow-lg"
+        />
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h4 class="text-black leading-relaxed">
+          The <span class="text-highlight-yellow">Light of the North Choral Festival and Competition (LNCFC)</span> is a premier national 
+          choral event organized by <span class="text-highlight-yellow">Saint Louis University</span> through its <span class="text-highlight-yellow">
+            Center for Culture and the Arts.</span> Since its inaugural season in 2024, LNCFC has become a leading choral gathering in 
+          the Cordilleras, bringing together choirs from across the Philippines to celebrate 
+          artistic excellence, cultural exchange, and the nation's rich choral tradition. 
+        </h4>
+        <h4 class="text-black leading-relaxed">
+            Celebrating the CICM Foundation Anniversary, the Light of the North Choral 
+            Festival and Competition returns on November 29, 2026 at the Prince Bernhard 
+            Gym and Fr. Joseph van den Daelen, CICM CCA Theater, Saint Louis University, 
+            Baguio City. Now in its third season, LNCFC continues to unite choirs from across 
+            the country in a celebration of artistic excellence and Philippine choral music. 
+        </h4>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Centered Single-Column Section  -->
+  <section class="w-full bg-white-background py-16 px-6 sm:px-12">
+    <!-- Updated parent container to max-w-7xl -->
+    <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-8">
+      
+      <!-- H2 Title on Top -->
+      <h2 class="font-headline text-h2 text-black">Revisiting the best of LNCFC 2025</h2>
+
+      <!-- Image (Matches max-w-5xl width for a clean look) -->
+      <img 
+        src="/images/placeholder.png" 
+        alt="Festival Highlights" 
+        class="w-full max-w-5xl h-[280px] sm:h-[400px] md:h-[500px] object-cover shadow-lg"
+      />
+
+      <!-- Text Container (Spans up to max-w-5xl) -->
+      <div class="flex flex-col gap-4 max-w-5xl w-full">
+        <h4 class="text-black leading-relaxed">
+          Last 2025, the Light of the North Choral Festival and Competition 
+          brought together 15 outstanding choirs from across the country, each 
+          showcasing exceptional talent and passion. Relive the memorable performances and 
+          inspiring moments that made the festival truly unforgettable.
+        </h4>
+        <h4 class="text-black leading-relaxed">
+          This year, on <span class="text-highlight-yellow font-bold">NOVEMBER 29, 2026</span>, the 3rd Light of the 
+          North Choral Festival and Competition returns to the stage. 
+          Experience a new level of choral excellence and artistic expression 
+          as we return with exciting opportunities and the launch of a new 
+          competition category.
+        </h4>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Sponsors & Partners Section -->
+  <section class="w-full bg-[#A75933] py-24 px-6 sm:px-12">
+    <!-- gap-10 applies exactly 40px spacing between every direct child -->
+    <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-10">
+      
+      <!-- H2 Title -->
+      <h2 class="font-headline text-h2 text-white">
+        Sponsors & Partners
+      </h2>
+
+      <!-- Description H4 -->
+      <h4 class="text-white leading-relaxed max-w-6xl w-full">
+        The Light of the North Choral Festival and Competition is made possible through the generous support and partnership of organizations that share our commitment to advancing choral excellence.
+      </h4>
+
+      <!-- Logos Row Image -->
+      <img 
+        src="/images/sponsors-img-row.png" 
+        alt="Sponsors and Partners Logos" 
+        class="w-full max-w-5xl h-auto object-contain"
+      />
+      
+    </div>
+  </section>
+
+    <!-- Centered Single-Column Section (Updated max-w-7xl) -->
+  <section class="w-full bg-white-background py-16 px-6 sm:px-12">
+    <!-- Updated parent container to max-w-7xl -->
+    <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-12">
+      
+      <!-- H2 Title on Top -->
+      <h2 class="font-headline text-h2 text-black">Application Period</h2>
+
+      <!-- Image (Matches max-w-5xl width for a clean look) -->
+      <img 
+        src="public\images\deadline-application.png" 
+        alt="Festival Highlights" 
+        class="object-cover shadow-lg"
+      />
+
+      <!-- Text Container (Spans up to max-w-5xl) -->
+        <h4 class="text-black leading-relaxed">
+			Applications for the Light of the North Choral Festival and Competition 2026 
+			will be accepted from <span class="text-highlight-yellow">June 10, 2026, to August 30, 2026</span>. Interested choirs are 
+			encouraged to submit their applications within the registration period to secure 
+			their participation in this year's festival.
+        </h4>
+
+	<Button href="/application">
+  		Submit an Application
+	</Button>
+    </div>
+  </section>
+
+<!-- Venue Highlights Section -->
+  <section class="w-full bg-[#E3A743] py-24 px-6 sm:px-12">
+    <div class="max-w-7xl mx-auto flex flex-col gap-16 lg:gap-[90px]">
+
+      <!-- Top Row: Left-Aligned H2 Heading -->
+      <div class="w-full text-left">
+        <h2 class="font-headline text-h2 text-white">
+          Venue
+        </h2>
+      </div>
+
+      <!-- Content Row 1: Image Left (35%), Text Right (65%) -->
+      <div class="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-8 lg:gap-12 items-center">
+        
+        <!-- Left Column: Image -->
+        <div class="w-full flex justify-center">
+          <img 
+            src="/images/venue-gym.png" 
+            alt="Prince Bernhard Gymnasium" 
+            class="w-full h-auto object-cover rounded-[20px] shadow-lg"
+          />
+        </div>
+
+        <!-- Right Column: Two H4 Text Blocks -->
+        <div class="flex flex-col gap-4 text-left">
+          <h4 class="text-white leading-relaxed">
+            The 2026 Light of the North Choral Festival and Competition will be held across two premier performance venues at Saint Louis University, Baguio City, each carefully selected to provide an exceptional experience for participants and audiences alike.
+          </h4>
+          <h4 class="text-white leading-relaxed">
+            The Open Choral Category will take place at the Prince Bernhard Gymnasium, a spacious venue capable of accommodating large audiences while providing an inspiring stage for choirs to showcase their artistry and musical excellence.
+          </h4>
+        </div>
+
+      </div>
+
+      <!-- Content Row 2: Text Left (65%), Image Right (35%) -->
+      <div class="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-8 lg:gap-12 items-center">
+        
+        <!-- Left Column: Two H4 Text Blocks (Order 2 on mobile, Order 1 on desktop) -->
+        <div class="flex flex-col gap-4 text-left order-2 lg:order-1">
+          <h4 class="text-white leading-relaxed">
+            Meanwhile, the Vocal Solo Category will be hosted at the Fr. Joseph Van Den Daelen, CICM Center for Culture and the Arts Theatre, an intimate performance space renowned for its excellent acoustics and concert hall atmosphere, offering an ideal setting for solo vocal performances.
+          </h4>
+          <h4 class="text-white leading-relaxed">
+            Together, these venues will serve as the home of the festival, welcoming talented musicians from across the country for a celebration of choral music, artistic excellence, and meaningful musical exchange.
+          </h4>
+        </div>
+
+        <!-- Right Column: Image (Order 1 on mobile, Order 2 on desktop) -->
+        <div class="w-full flex justify-center order-1 lg:order-2">
+          <img 
+            src="/images/venue-theater.png" 
+            alt="Fr. Joseph Van Den Daelen CCA Theatre" 
+            class="w-full h-auto object-cover rounded-[20px] shadow-lg"
+          />
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</Layout>

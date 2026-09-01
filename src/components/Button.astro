@@ -1,0 +1,35 @@
+---
+// src/components/Button.astro
+interface Props {
+  href?: string;
+  type?: "button" | "submit" | "reset";
+  class?: string;
+}
+
+const { href, type = "button", class: className = "" } = Astro.props;
+
+const buttonStyles = `
+  w-full max-w-[475px] h-[70px] 
+  bg-primary hover:opacity-90 
+  flex items-center justify-center text-center 
+  rounded-[20px] transition-all duration-200 
+  px-6 shadow-md cursor-pointer
+  ${className}
+`.trim();
+---
+
+{
+  href ? (
+    <a href={href} class={buttonStyles}>
+      <h4 class="text-text-white font-headline">
+        <slot />
+      </h4>
+    </a>
+  ) : (
+    <button type={type} class={buttonStyles}>
+      <h4 class="text-text-white font-headline">
+        <slot />
+      </h4>
+    </button>
+  )
+}

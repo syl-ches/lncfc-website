@@ -1,0 +1,31 @@
+---
+// src/layouts/Layout.astro
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "LNCFC Website", 
+  description = "Be one with the North" 
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Updated type to match PNG -->
+    <link rel="icon" type="image/png" href="/lncfc-favicon.PNG" />
+    
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

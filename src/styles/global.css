@@ -180,3 +180,27 @@ html {
 body {
   margin: 0;
 }
+
+/* Base Heading Styles */
+h1 {
+  font-family: var(--font-headline);
+  font-size: var(--text-h1);
+  font-weight: 600; /* Uses Farnham Headline Semi-Bold */
+  color: var(--color-primary);
+  margin-top: 0;
+}
+
+h2 {
+  font-family: var(--font-headline);
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-family: var(--font-headline);
+  font-size: var(--text-h3);
+}
+
+h4 {
+  font-family: var(--font-headline);
+  font-size: var(--text-h4);
+}
