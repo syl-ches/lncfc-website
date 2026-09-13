@@ -2,10 +2,11 @@
 // src/pages/index.astro
 import Layout from '../layouts/Layout.astro';
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 import Button from '../components/Button.astro';
 ---
 
-<Layout title="LNCFC | LNCFC Website">
+<Layout title="LNCFC | Home">
   <Navbar />
 
   <!-- Hero Section -->
@@ -134,7 +135,7 @@ import Button from '../components/Button.astro';
 
       <!-- Image (Matches max-w-5xl width for a clean look) -->
       <img 
-        src="public\images\deadline-application.png" 
+        src="/images/deadline-application.png" 
         alt="Festival Highlights" 
         class="object-cover shadow-lg"
       />
@@ -160,7 +161,7 @@ import Button from '../components/Button.astro';
       <!-- Top Row: Left-Aligned H2 Heading -->
       <div class="w-full text-left">
         <h2 class="font-headline text-h2 text-white">
-          Venue
+          Venues
         </h2>
       </div>
 
@@ -170,7 +171,7 @@ import Button from '../components/Button.astro';
         <!-- Left Column: Image -->
         <div class="w-full flex justify-center">
           <img 
-            src="/images/venue-gym.png" 
+            src="/images/pb-gym.png" 
             alt="Prince Bernhard Gymnasium" 
             class="w-full h-auto object-cover rounded-[20px] shadow-lg"
           />
@@ -204,7 +205,7 @@ import Button from '../components/Button.astro';
         <!-- Right Column: Image (Order 1 on mobile, Order 2 on desktop) -->
         <div class="w-full flex justify-center order-1 lg:order-2">
           <img 
-            src="/images/venue-theater.png" 
+            src="/images/jvdd-theatre.png" 
             alt="Fr. Joseph Van Den Daelen CCA Theatre" 
             class="w-full h-auto object-cover rounded-[20px] shadow-lg"
           />
@@ -214,4 +215,5 @@ import Button from '../components/Button.astro';
 
     </div>
   </section>
+  <Footer/>
 </Layout>

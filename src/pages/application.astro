@@ -1,0 +1,202 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Button from '../components/Button.astro';
+---
+
+<Layout title="LNCFC | Application">
+  <Navbar />
+
+  <!-- Hero Section -->
+  <div class="relative w-full min-h-[720px] flex flex-col items-center justify-center overflow-hidden bg-black">
+    <img 
+      src="/images/application-hero.png" 
+      alt="LNCFC Hero Background" 
+      class="absolute inset-0 w-full h-full object-cover z-0 opacity-40" 
+    />
+
+    <main class="relative z-10 px-6 text-center">
+      <h1 
+        style="color: var(--color-text-white);" 
+        class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-8"
+      >
+        Application and Registration
+      </h1>
+    </main>
+  </div>
+
+  <!-- Application & Registration Main Section -->
+  <section class="w-full bg-white py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
+    <div class="max-w-[1123px] mx-auto flex flex-col items-start text-left gap-10 lg:gap-14">
+
+      <!-- ================= 1. APPLICATION BLOCK ================= -->
+      <div class="flex flex-col gap-6 lg:gap-8 w-full">
+        <!-- Primary Heading (Aligned Outer Left Edge) -->
+        <h3 class="text-gray-900 font-headline text-left">
+          Application
+        </h3>
+
+        <!-- Indented Application Content -->
+        <div class="flex flex-col gap-6 w-full text-gray-800 pl-4 sm:pl-8 border-l-2 border-gray-100">
+
+          <!-- Online Application Form Group -->
+          <div class="flex flex-col gap-3">
+            <h4 class="font-bold text-gray-900">
+              Online Application Form
+            </h4>
+
+            <ul class="list-disc pl-4 sm:pl-6 space-y-2">
+              <li>
+                <h4 class="inline">
+                  Vocal Solo Application Form: {" "}
+                  <a 
+                    href="https://forms.gle/zCkFWg1hi3vRbMJC8" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="text-highlight-yellow underline hover:underline-offset-4 transition-all cursor-pointer relative z-10"
+                  >
+                    https://forms.gle/zCkFWg1hi3vRbMJC8
+                  </a>
+                </h4>
+              </li>
+              <li>
+                <h4 class="inline">
+                  Choral Category Application Form: {" "}
+                  <a 
+                    href="https://forms.gle/yqhnPa33SbHsc4AUA" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="text-highlight-yellow underline hover:underline-offset-4 transition-all cursor-pointer relative z-10"
+                  >
+                    https://forms.gle/yqhnPa33SbHsc4AUA
+                  </a>
+                </h4>
+              </li> 
+            </ul>
+          </div>
+
+          <h4 class="leading-relaxed">
+            If the application link does not work, you may compile all 
+            required documents in a Google Drive folder and send the folder 
+            link to{" "}
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=slulightofthenorth@gmail.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="text-highlight-yellow underline hover:underline-offset-4 transition-all cursor-pointer relative z-10"
+            >
+              slulightofthenorth@gmail.com
+            </a>. Please ensure that the folder is accessible for viewing. 
+          </h4>
+
+          <!-- Upload Requirements (Choir) Group -->
+          <div class="flex flex-col gap-3">
+            <h4 class="font-bold text-gray-900">
+              Upload requirements (Choir)
+            </h4>
+
+            <ul class="list-disc pl-4 sm:pl-6 space-y-2">
+              <li>
+                <h4 class="inline">
+                  A written overview detailing your choir’s background, history, notable achievements, and participation in past competitions (300 words in paragraph).
+                </h4>
+              </li>
+              <li>
+                <h4 class="inline">
+                  Submit a profile of the choir’s conductor, emphasizing relevant experience, credentials, and professional accomplishments (300 words in paragraph).
+                </h4>
+              </li>
+              <li>
+                <h4 class="inline">
+                  Recent photos of the choir and a formal, professional photo of the conductor.
+                </h4>
+              </li>
+              <li>
+                <h4 class="inline">
+                  Video Recording of two (2) songs of different genres recorded within the last six (6) months prior to this application.
+                </h4>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Upload Requirements (Soloists) Group -->
+          <div class="flex flex-col gap-3">
+            <h4 class="font-bold text-gray-900">
+              Upload requirements (Soloists)
+            </h4>
+
+            <ul class="list-disc pl-4 sm:pl-6 space-y-2">
+              <li>
+                <h4 class="inline">
+                  Two (2) HD photos of yourself to be used as your profile picture.
+                </h4>
+              </li>
+              <li>
+                <h4 class="inline">
+                  At least one (1) audition video of you singing Original Pilipino Music (OPM) song/s.
+                </h4>
+              </li>
+            </ul>
+          </div>
+
+          <h4 class="leading-relaxed">
+            Once you have submitted your application form, kindly wait for the completion 
+            of the screening process. You will be notified via email once the screening results 
+            are finalized. Successful applicants may then proceed with the registration process.
+          </h4>
+
+        </div>
+      </div>
+
+      <!-- ================= 2. REGISTRATION BLOCK ================= -->
+      <div class="flex flex-col gap-6 lg:gap-8 w-full">
+        <!-- Primary Heading (Aligned Outer Left Edge) -->
+        <h3 class="text-gray-900 font-headline text-left">
+          Registration
+        </h3>
+
+        <!-- Indented Registration Content -->
+        <div class="flex flex-col gap-6 w-full text-gray-800 pl-4 sm:pl-8 border-l-2 border-gray-100">
+          <div class="flex flex-col gap-3">
+            <h4 class="font-bold text-gray-900">
+              Payment Instructions
+            </h4>
+
+            <ul class="list-disc pl-4 sm:pl-6 space-y-2">
+              <li>
+                <h4 class="inline">
+                  Open Category: ₱6,000.00 registration fee.
+                </h4>
+              </li>
+              <li>
+                <h4 class="inline">
+                  Vocal Solo Category: ₱3,000.00 registration fee.
+                </h4>
+              </li>
+              <li>
+                <h4 class="inline">
+                  Account Name: Lovely Yzhma Heart A. Tiwaquen.
+                </h4>
+              </li>
+              <li>
+                <h4 class="inline">
+                  Account Number: 005470760171
+                </h4>
+              </li>
+              <li>
+                <h4 class="inline">
+                  Bank: BDO Unibank, Inc.
+                </h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

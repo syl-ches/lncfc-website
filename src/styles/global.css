@@ -134,6 +134,7 @@
   --text-h2: 48px;
   --text-h3: 36px;
   --text-h4: 28px;
+  --text-h5:24px;
 }
 
 
@@ -160,6 +161,7 @@
   --text-h2: 48px;
   --text-h3: 36px;
   --text-h4: 28px;
+  --text-h5:24px;
 }
 
 
@@ -203,4 +205,9 @@ h3 {
 h4 {
   font-family: var(--font-headline);
   font-size: var(--text-h4);
+}
+
+h5 {
+  font-family: var(--font-headline);
+  font-size: var(--text-h5);
 }

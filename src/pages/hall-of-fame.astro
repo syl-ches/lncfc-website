@@ -1,0 +1,150 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Button from '../components/Button.astro';
+---
+
+<Layout title="LNCFC | Hall of Fame">
+  <Navbar />
+
+  <!-- Hero Section -->
+  <div class="relative w-full min-h-[720px] flex flex-col items-center justify-center overflow-hidden bg-primary">
+    <img 
+      src="/images/hall-hero.png" 
+      alt="LNCFC Hero Background" 
+      class="absolute inset-0 w-full h-full object-cover z-0 opacity-78" 
+    />
+
+    <main class="relative z-10 px-6 text-center">
+      <h1 
+        style="color: var(--color-text-white);" 
+        class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-8"
+      >
+        Hall of Fame
+      </h1>
+      <h4 
+        style="color: var(--color-text-white);" 
+        class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]"
+      >
+        Let our harmonies be one light with the North!
+      </h4>
+    </main>
+  </div>
+
+  <!-- Winners Section -->
+  <section class="relative w-full bg-white py-12 px-[20px] lg:py-20 lg:px-[55px] overflow-hidden">
+    <!-- Section Background Image -->
+    <img 
+      src="/images/hof-bg.png" 
+      alt="Hall of Fame Section Background" 
+      class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" 
+    />
+
+    <!-- Content Wrapper with z-10 to stay above background -->
+    <div class="relative z-10 w-full flex flex-col gap-16 lg:gap-24">
+
+      <!-- Row 1: 2024 -->
+      <div class="flex flex-col gap-6 w-full">
+        <h2 class="text-left font-headline text-gray-900"><span class="text-highlight-yellow">2024</span></h2>
+        
+        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 w-full">
+          <!-- Image -->
+          <div class="w-full lg:w-[571px] shrink-0">
+            <img 
+              src="/images/feu.png" 
+              alt="LNCFC 2024 Winners" 
+              class="w-full max-w-[571px] h-auto object-cover shadow-md"
+            />
+          </div>
+
+          <!-- Text Details -->
+          <div class="flex flex-col gap-6 w-full text-gray-800">
+            <div class="space-y-1">
+              <h4 class="font-normal text-gray-900">
+                <span class="text-highlight-yellow">2nd Runner-Up:</span> University of Baguio Voices Chorale
+              </h4>
+              <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                <li><h4 class="font-normal">Conductor: Mr. John Glenn Gaerlan</h4></li>
+                <li><h4 class="font-normal">Repertoire: Ili-ili by Ily Matthew Maniano; Pal Seo Song by Hyo-Won Woo</h4></li>
+              </ul>
+            </div>
+
+            <div class="space-y-1">
+              <h4 class="font-normal text-gray-900">
+                <span class="text-highlight-yellow">1st Runner-Up:</span> Tarlac Männerchor
+              </h4>
+              <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                <li><h4 class="font-normal">Conductor: Mr. Jero Anthony Buenviaje</h4></li>
+                <li><h4 class="font-normal">Repertoire: Jubilate Deo by Mark Raeniel B. Agpasa; Didn’t my Lord Deliver by Aaron Dale</h4></li>
+              </ul>
+            </div>
+
+            <div class="space-y-1">
+              <h4 class="font-normal text-gray-900">
+                <span class="text-highlight-yellow">Grand Champion:</span> Far Eastern University Chorale
+              </h4>
+              <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                <li><h4 class="font-normal">Conductor: Mr. Roijin Galauran Suarez</h4></li>
+                <li><h4 class="font-normal">Repertoire: Ang Tren by Saunder Choi; O Magnum Mysterium by Andrej Makor</h4></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: 2025 -->
+      <div class="flex flex-col gap-6 w-full">
+        <h2 class="text-right font-headline text-gray-900"><span class="text-highlight-yellow">2025</span></h2>
+        
+        <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8 lg:gap-12 w-full">
+          <!-- Image -->
+          <div class="w-full lg:w-[571px] shrink-0">
+            <img 
+              src="/images/bcu.png" 
+              alt="LNCFC 2025 Winners" 
+              class="w-full max-w-[571px] h-auto object-cover shadow-md ml-auto"
+            />
+          </div>
+
+          <!-- Text Details -->
+          <div class="flex flex-col gap-6 w-full text-gray-800">
+            <div class="space-y-1">
+              <h4 class="font-normal text-gray-900">
+                <span class="text-highlight-yellow">2nd Runner-Up:</span> Tarlac Männerchor
+              </h4>
+              <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                <li><h4 class="font-normal">Conductor: Mr. Darwin B. Vargas</h4></li>
+                <li><h4 class="font-normal">Repertoire: Penitensya, Ian Gabriel T. Corpuz; Didn’t My Lord Deliver Daniel by Aaron Dale</h4></li>
+              </ul>
+            </div>
+
+            <div class="space-y-1">
+              <h4 class="font-normal text-gray-900">
+                <span class="text-highlight-yellow">1st Runner-Up:</span> Adamson University Chorale
+              </h4>
+              <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                <li><h4 class="font-normal">Conductor: Mr. John Rufiel G. Aniceto</h4></li>
+                <li><h4 class="font-normal">Repertoire: Cum Sancto Spiritus by Hyo Won Woo; Papedsalamat by Nilo Alcala III</h4></li>
+              </ul>
+            </div>
+
+            <div class="space-y-1">
+              <h4 class="font-normal text-gray-900">
+                <span class="text-highlight-yellow">Grand Champion:</span> Baguio Central University Chamber Choir
+              </h4>
+              <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                <li><h4 class="font-normal">Conductor: Mr. Jomard L. Calamba</h4></li>
+                <li><h4 class="font-normal">Repertoire: Māte Saule by Jānis Peters; I Will Lift My Eyes by Zachary J. Moore</h4></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

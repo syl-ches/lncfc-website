@@ -1,0 +1,129 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Button from '../components/Button.astro';
+---
+
+<Layout title='LNCFC | About'>
+  <Navbar />
+
+  <main>
+    <!-- Our Story Section -->
+    <section class="w-full bg-white py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
+      <div class="max-w-[1123px] mx-auto flex flex-col items-center text-center gap-10 lg:gap-[60px]">
+
+        <!-- H1 Title -->
+        <h1 class="text-primary font-headline">
+          Our Story
+        </h1>
+
+        <h4 class="text-gray-800 leading-relaxed w-full">
+          The Light of the North Choral Festival and Competition (LNCFC) was 
+          founded in 2024 by Mrs. Normita Rio-Pablico under Saint Louis University, 
+          with the vision of promoting and celebrating the rich choral tradition of the 
+          Philippines. It provides a meaningful platform for choirs to come together, share 
+          their artistry, celebrate music, and build lasting connections through the beauty of choral singing. 
+        </h4>
+
+        <!-- Image 1 -->
+        <div class="w-full flex justify-center">
+          <img 
+            src="/images/our-story-1.png" 
+            alt="Light of the North Choral Performance" 
+            class="w-full aspect-[1123/657] object-cover shadow-lg"  
+          />
+        </div>
+
+        <h4 class="text-gray-800 leading-relaxed w-full">
+          The inaugural festival was held on November 30, 2024, at Fr. 
+          Joseph Van den Daelen, CICM. Center for Culture and the Arts Theater, 
+          bringing together 15 participating choirs from numerous provinces, cities, and 
+          institutions. Featuring the Open Category and a Gala Concert of the SLU Glee Club 
+          and The BAAO Children and Youth Choir, the first edition marked the beginning of a 
+          growing tradition that highlighted the diversity and artistry of the choral community. 
+          Its successful launch was made possible through the collaboration and support of the SLU 
+          Administration led by Fr. Gilbert B. Sales, CICM., PhD., the organizing committee, and 
+          our sponsors.
+        </h4>
+
+        <!-- Image 2 -->
+        <div class="w-full flex justify-center">
+          <img 
+            src="/images/our-story-2.png" 
+            alt="SLU Choir Ensemble" 
+            class="w-full aspect-[1123/657] object-cover shadow-lg"
+          />
+        </div>
+
+        <!-- Two Paragraphs Below Image 2 (4. Changed max-w-3xl to w-full) -->
+        <div class="flex flex-col gap-6 lg:gap-10 w-full">
+          <h4 class="text-gray-800 leading-relaxed">
+            Following the success of its inaugural edition, the Light of the North 
+            Choral Festival and Competition returned for its second installment with a 
+            renewed commitment to providing a meaningful platform for choral performance 
+            and artistic exchange. Building upon the strong foundation established in its 
+            first year, the festival continued to welcome participating choirs from across 
+            the country while maintaining the spirit of excellence, camaraderie, and musical 
+            collaboration that defined its beginnings. The second edition further strengthened 
+            the festival's presence within the Philippine choral community, reaffirming its role 
+            as a growing tradition that celebrates the artistry and dedication of choral musicians.
+          </h4>
+          <h4 class="text-gray-800 leading-relaxed">
+            To date, the Light of the North Choral Festival and Competition 
+            has welcomed 31 participating choirs, bringing together singers, conductors, 
+            music educators, and audiences from across the country. Each edition has enriched 
+            its growing legacy through artistic exchange, the celebration of diverse choral 
+            traditions, and the strengthening of bonds within the choral community. 
+            As the festival continues to evolve, it stands as a testament to the enduring 
+            power of choral music and the collective efforts of the individuals, institutions, 
+            and organizations who have shaped its journey since 2024. 
+          </h4>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section 1: Vision -->
+<section class="w-full bg-[#056F6C] py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
+  <div class="max-w-[1123px] mx-auto flex flex-col items-center text-center gap-6 lg:gap-10">
+    <h2 class="!text-white font-headline">
+      Vision
+    </h2>
+    <h4 class="!text-white leading-relaxed w-full">
+      To be a leading national platform for choral excellence, 
+      fostering a vibrant and connected Filipino choral community where voices, 
+      artistry, and shared passion for music inspire one another. 
+    </h4>
+  </div>
+</section>
+
+<!-- Section 2: Mission -->
+<section class="w-full bg-white py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
+  <div class="max-w-[1123px] mx-auto flex flex-col items-center text-center gap-6 lg:gap-10">
+    <h2 class="text-black font-headline">
+      Mission
+    </h2>
+    <h4 class="text-gray-800 leading-relaxed w-full">
+      To provide a professional and inclusive platform 
+      for choirs and vocalists to perform, learn, and grow through 
+      meaningful competition, expert artistic feedback, cultural exchange, and community-building. 
+    </h4>
+  </div>
+</section>
+
+<!-- Section 3: Organizers -->
+<section class="w-full bg-[#E3A743] py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
+  <div class="max-w-[1123px] mx-auto flex flex-col items-center text-center gap-6 lg:gap-10">
+    <h2 class="!text-white font-headline">
+      Organizers
+    </h2>
+    <h4 class="!text-white leading-relaxed w-full">
+      Saint Louis University Glee Club and Saint Louis University Center for Culture and the Arts.
+    </h4>
+  </div>
+</section>
+  </main>
+
+  <Footer />
+</Layout>

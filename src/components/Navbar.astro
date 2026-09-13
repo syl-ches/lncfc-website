@@ -1,5 +1,9 @@
-<nav class="w-full bg-primary py-6 px-4 sm:px-6">
-  <!-- Gap scales up from 20px on small screens to 75px on large screens -->
+---
+// Get the current path from the Astro request object
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="sticky top-0 z-50 w-full bg-primary py-6 px-4 sm:px-6">
   <div class="flex flex-wrap items-center justify-center gap-5 md:gap-10 xl:gap-[75px]">
     
     <a href="/" class="flex items-center shrink-0">
@@ -7,12 +11,47 @@
     </a>
 
     <!-- Navigation links -->
-    <a href="/" class="font-headline text-h4 not-italic text-text-white hover:text-highlight-yellow transition-colors">Home</a>
-    <a href="/about" class="font-headline text-h4 not-italic text-text-white hover:text-highlight-yellow transition-colors">About</a>
-    <a href="/services" class="font-headline text-h4 not-italic text-text-white hover:text-highlight-yellow transition-colors">Guidelines</a>
-    <a href="/" class="font-headline text-h4 not-italic text-text-white hover:text-highlight-yellow transition-colors">Application</a>
-    <a href="/about" class="font-headline text-h4 not-italic text-text-white hover:text-highlight-yellow transition-colors">Hall of Fame</a>
-    <a href="/services" class="font-headline text-h4 not-italic text-text-white hover:text-highlight-yellow transition-colors">Contact Us</a>
+    <a 
+      href="/" 
+      class={`font-headline text-h4 not-italic transition-colors hover:text-highlight-yellow ${currentPath === '/' ? 'text-highlight-yellow' : 'text-text-white'}`}
+    >
+      Home
+    </a>
+
+    <a 
+      href="/about" 
+      class={`font-headline text-h4 not-italic transition-colors hover:text-highlight-yellow ${currentPath === '/about' || currentPath === '/about/' ? 'text-highlight-yellow' : 'text-text-white'}`}
+    >
+      About
+    </a>
+
+    <a 
+      href="/guidelines" 
+      class={`font-headline text-h4 not-italic transition-colors hover:text-highlight-yellow ${currentPath === '/guidelines' || currentPath === '/guidelines/' ? 'text-highlight-yellow' : 'text-text-white'}`}
+    >
+      Mechanics
+    </a>
+
+    <a 
+      href="/application" 
+      class={`font-headline text-h4 not-italic transition-colors hover:text-highlight-yellow ${currentPath === '/application' || currentPath === '/application/' ? 'text-highlight-yellow' : 'text-text-white'}`}
+    >
+      Application
+    </a>
+
+    <a 
+      href="/hall-of-fame" 
+      class={`font-headline text-h4 not-italic transition-colors hover:text-highlight-yellow ${currentPath === '/hall-of-fame' || currentPath === '/hall-of-fame/' ? 'text-highlight-yellow' : 'text-text-white'}`}
+    >
+      Hall of Fame
+    </a>
+
+    <a 
+      href="/contact" 
+      class={`font-headline text-h4 not-italic transition-colors hover:text-highlight-yellow ${currentPath === '/contact' || currentPath === '/contact/' ? 'text-highlight-yellow' : 'text-text-white'}`}
+    >
+      Contact Us
+    </a>
 
   </div>
 </nav>
