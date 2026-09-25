@@ -1,25 +1,24 @@
 ---
-// src/pages/index.astro
+// src/pages/about.astro
 import Layout from '../layouts/Layout.astro';
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
-import Button from '../components/Button.astro';
 ---
 
-<Layout title='LNCFC | About'>
+<Layout title="LNCFC | About">
   <Navbar />
 
   <main>
     <!-- Our Story Section -->
-    <section class="w-full bg-white py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
-      <div class="max-w-[1123px] mx-auto flex flex-col items-center text-center gap-10 lg:gap-[60px]">
+    <section class="w-full bg-white-background py-12 lg:py-24 px-6 sm:px-12">
+      <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-8 lg:gap-12">
 
-        <!-- H1 Title -->
-        <h1 class="text-primary font-headline">
+        <!-- Title -->
+        <h1 class="text-primary font-headline !text-[36px] md:!text-[48px] lg:!text-[68px] leading-tight">
           Our Story
         </h1>
 
-        <h4 class="text-gray-800 leading-relaxed w-full">
+        <h4 class="text-black leading-relaxed w-full !text-[16px] md:!text-[20px] lg:!text-[28px]">
           The Light of the North Choral Festival and Competition (LNCFC) was 
           founded in 2024 by Mrs. Normita Rio-Pablico under Saint Louis University, 
           with the vision of promoting and celebrating the rich choral tradition of the 
@@ -28,15 +27,15 @@ import Button from '../components/Button.astro';
         </h4>
 
         <!-- Image 1 -->
-        <div class="w-full flex justify-center">
+        <div class="w-full max-w-5xl mx-auto flex justify-center">
           <img 
             src="/images/our-story-1.png" 
             alt="Light of the North Choral Performance" 
-            class="w-full aspect-[1123/657] object-cover shadow-lg"  
+            class="w-full h-auto max-h-[550px] object-cover shadow-lg rounded-xl"  
           />
         </div>
 
-        <h4 class="text-gray-800 leading-relaxed w-full">
+        <h4 class="text-black leading-relaxed w-full !text-[16px] md:!text-[20px] lg:!text-[28px]">
           The inaugural festival was held on November 30, 2024, at Fr. 
           Joseph Van den Daelen, CICM. Center for Culture and the Arts Theater, 
           bringing together 15 participating choirs from numerous provinces, cities, and 
@@ -49,17 +48,17 @@ import Button from '../components/Button.astro';
         </h4>
 
         <!-- Image 2 -->
-        <div class="w-full flex justify-center">
+        <div class="w-full max-w-5xl mx-auto flex justify-center">
           <img 
             src="/images/our-story-2.png" 
             alt="SLU Choir Ensemble" 
-            class="w-full aspect-[1123/657] object-cover shadow-lg"
+            class="w-full h-auto max-h-[550px] object-cover shadow-lg rounded-xl"
           />
         </div>
 
-        <!-- Two Paragraphs Below Image 2 (4. Changed max-w-3xl to w-full) -->
+        <!-- Paragraphs Below Image 2 -->
         <div class="flex flex-col gap-6 lg:gap-10 w-full">
-          <h4 class="text-gray-800 leading-relaxed">
+          <h4 class="text-black leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
             Following the success of its inaugural edition, the Light of the North 
             Choral Festival and Competition returned for its second installment with a 
             renewed commitment to providing a meaningful platform for choral performance 
@@ -70,7 +69,7 @@ import Button from '../components/Button.astro';
             the festival's presence within the Philippine choral community, reaffirming its role 
             as a growing tradition that celebrates the artistry and dedication of choral musicians.
           </h4>
-          <h4 class="text-gray-800 leading-relaxed">
+          <h4 class="text-black leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
             To date, the Light of the North Choral Festival and Competition 
             has welcomed 31 participating choirs, bringing together singers, conductors, 
             music educators, and audiences from across the country. Each edition has enriched 
@@ -84,45 +83,46 @@ import Button from '../components/Button.astro';
 
       </div>
     </section>
-    <!-- Section 1: Vision -->
-<section class="w-full bg-[#056F6C] py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
-  <div class="max-w-[1123px] mx-auto flex flex-col items-center text-center gap-6 lg:gap-10">
-    <h2 class="!text-white font-headline">
-      Vision
-    </h2>
-    <h4 class="!text-white leading-relaxed w-full">
-      To be a leading national platform for choral excellence, 
-      fostering a vibrant and connected Filipino choral community where voices, 
-      artistry, and shared passion for music inspire one another. 
-    </h4>
-  </div>
-</section>
 
-<!-- Section 2: Mission -->
-<section class="w-full bg-white py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
-  <div class="max-w-[1123px] mx-auto flex flex-col items-center text-center gap-6 lg:gap-10">
-    <h2 class="text-black font-headline">
-      Mission
-    </h2>
-    <h4 class="text-gray-800 leading-relaxed w-full">
-      To provide a professional and inclusive platform 
-      for choirs and vocalists to perform, learn, and grow through 
-      meaningful competition, expert artistic feedback, cultural exchange, and community-building. 
-    </h4>
-  </div>
-</section>
+    <!-- Vision Section -->
+    <section class="w-full bg-[#056F6C] py-12 lg:py-24 px-6 sm:px-12">
+      <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-6 lg:gap-8">
+        <h2 class="font-headline text-white !text-[28px] md:!text-[36px] lg:!text-[48px]">
+          Vision
+        </h2>
+        <h4 class="text-white leading-relaxed w-full !text-[16px] md:!text-[20px] lg:!text-[28px]">
+          To be a leading national platform for choral excellence, 
+          fostering a vibrant and connected Filipino choral community where voices, 
+          artistry, and shared passion for music inspire one another. 
+        </h4>
+      </div>
+    </section>
 
-<!-- Section 3: Organizers -->
-<section class="w-full bg-[#E3A743] py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
-  <div class="max-w-[1123px] mx-auto flex flex-col items-center text-center gap-6 lg:gap-10">
-    <h2 class="!text-white font-headline">
-      Organizers
-    </h2>
-    <h4 class="!text-white leading-relaxed w-full">
-      Saint Louis University Glee Club and Saint Louis University Center for Culture and the Arts.
-    </h4>
-  </div>
-</section>
+    <!-- Mission Section -->
+    <section class="w-full bg-white-background py-12 lg:py-24 px-6 sm:px-12">
+      <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-6 lg:gap-8">
+        <h2 class="font-headline text-black !text-[28px] md:!text-[36px] lg:!text-[48px]">
+          Mission
+        </h2>
+        <h4 class="text-black leading-relaxed w-full !text-[16px] md:!text-[20px] lg:!text-[28px]">
+          To provide a professional and inclusive platform 
+          for choirs and vocalists to perform, learn, and grow through 
+          meaningful competition, expert artistic feedback, cultural exchange, and community-building. 
+        </h4>
+      </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section class="w-full bg-[#E3A743] py-12 lg:py-24 px-6 sm:px-12">
+      <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-6 lg:gap-8">
+        <h2 class="font-headline text-white !text-[28px] md:!text-[36px] lg:!text-[48px]">
+          Organizers
+        </h2>
+        <h4 class="text-white leading-relaxed w-full !text-[16px] md:!text-[20px] lg:!text-[28px]">
+          Saint Louis University Glee Club and Saint Louis University Center for Culture and the Arts.
+        </h4>
+      </div>
+    </section>
   </main>
 
   <Footer />

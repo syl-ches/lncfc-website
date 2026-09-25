@@ -9,11 +9,11 @@ interface Props {
 const { href, type = "button", class: className = "" } = Astro.props;
 
 const buttonStyles = `
-  w-full max-w-[475px] h-[70px] 
+  w-full max-w-[475px] h-[52px] md:h-[70px] 
   bg-primary hover:opacity-90 
   flex items-center justify-center text-center 
-  rounded-[20px] transition-all duration-200 
-  px-6 shadow-md cursor-pointer
+  rounded-[14px] md:rounded-[20px] transition-all duration-200 
+  px-4 md:px-6 shadow-md cursor-pointer
   ${className}
 `.trim();
 ---
@@ -21,13 +21,13 @@ const buttonStyles = `
 {
   href ? (
     <a href={href} class={buttonStyles}>
-      <h4 class="text-text-white font-headline">
+      <h4 class="text-text-white font-headline !text-[16px] md:!text-[22px] lg:!text-[28px] leading-none">
         <slot />
       </h4>
     </a>
   ) : (
     <button type={type} class={buttonStyles}>
-      <h4 class="text-text-white font-headline">
+      <h4 class="text-text-white font-headline !text-[16px] md:!text-[22px] lg:!text-[28px] leading-none">
         <slot />
       </h4>
     </button>

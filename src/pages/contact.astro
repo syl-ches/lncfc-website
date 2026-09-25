@@ -7,98 +7,96 @@ import Button from '../components/Button.astro';
 ---
 
 <Layout title='LNCFC | Contact'>
-    <Navbar/>
+  <Navbar/>
 
-    <!-- Contact Us Section -->
-<section class="w-full bg-white py-12 px-6 md:pl-[100px] md:pr-12 lg:pl-[100px] lg:pr-16 text-left">
-  <div class="max-w-[1200px] flex flex-col gap-8">
-    
-    <!-- Header -->
-    <h1 class="text-gray-900 font-headline">Contact Us</h1>
-
-    <!-- Content Details -->
-    <div class="flex flex-col gap-6 text-gray-800">
+  <!-- Contact Us Section -->
+  <section class="w-full bg-white py-12 px-6 md:px-12 lg:px-16 text-center xl:text-left">
+    <div class="max-w-[1200px] mx-auto flex flex-col gap-8 items-center xl:items-start">
       
-      <!-- For Inquiries and Registration Concerns -->
-      <div class="space-y-2">
-        <h4 class="font-normal text-gray-900">
-          <span class="text-highlight-yellow">For inquiries and registration concerns:</span>
-        </h4>
-        <ul class="list-disc pl-6 space-y-1 text-gray-700">
-          <li>
-            <h4 class="font-normal inline">
-              Email: 
-              <a 
-                href="mailto:slulightofthenorth@slu.edu.ph" 
-                class="underline hover:text-highlight-yellow transition-colors"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                slulightofthenorth@slu.edu.ph
-              </a>
-            </h4>
-          </li>
-          <li>
-            <h4 class="font-normal inline">Contact Number: +63 917 505 0218</h4>
-          </li>
-        </ul>
-      </div>
+      <!-- Header -->
+      <h1 class="text-gray-900 font-headline !text-[32px] md:!text-[48px] lg:!text-[68px] leading-tight text-center xl:text-left">
+        Contact Us
+      </h1>
 
-      <!-- Social Media -->
-      <div class="space-y-2">
-        <h4 class="font-normal text-gray-900">
-          <span class="text-highlight-yellow">Social Media:</span>
-        </h4>
-        <ul class="list-disc pl-6 space-y-1 text-gray-700">
-          <li>
-            <h4 class="font-normal inline">
-              Facebook: Light of the North Choral Festival and Competition
-            </h4>
-          </li>
-        </ul>
-      </div>
+      <!-- Content Details -->
+      <div class="flex flex-col gap-6 text-gray-800 w-full items-center xl:items-start">
+        
+        <!-- For Inquiries and Registration Concerns -->
+        <div class="space-y-2 w-full flex flex-col items-center xl:items-start">
+          <h4 class="font-normal text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px] text-center xl:text-left">
+            <span class="text-highlight-yellow">For inquiries and registration concerns:</span>
+          </h4>
+          <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+            <li>
+              <h4 class="font-normal inline !text-[16px] md:!text-[20px] lg:!text-[28px]">
+                Email: 
+                <a 
+                  href="mailto:slulightofthenorth@slu.edu.ph" 
+                  class="underline hover:text-highlight-yellow transition-colors"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  slulightofthenorth@slu.edu.ph
+                </a>
+              </h4>
+            </li>
+            <li>
+              <h4 class="font-normal inline !text-[16px] md:!text-[20px] lg:!text-[28px]">Contact Number: +63 917 505 0218</h4>
+            </li>
+          </ul>
+        </div>
 
-      <!-- Venue -->
-      <div class="space-y-2">
-        <h4 class="font-normal text-gray-900">
-          <span class="text-highlight-yellow">Venue:</span>
-        </h4>
-        <ul class="list-disc pl-6 space-y-1 text-gray-700">
-          <li>
-            <h4 class="font-normal inline">
-              Saint Louis University Center for Culture and the Arts
-            </h4>
-          </li>
-          <li>
-            <h4 class="font-normal inline">
-              SLU Main Campus, Upper Bonifacio Street, Baguio City, Philippines
-            </h4>
-          </li>
-        </ul>
-      </div>
+        <!-- Social Media -->
+        <div class="space-y-2 w-full flex flex-col items-center xl:items-start">
+          <h4 class="font-normal text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px] text-center xl:text-left">
+            <span class="text-highlight-yellow">Social Media:</span>
+          </h4>
+          <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+            <li>
+              <h4 class="font-normal inline !text-[16px] md:!text-[20px] lg:!text-[28px]">
+                Facebook: Light of the North Choral Festival and Competition
+              </h4>
+            </li>
+          </ul>
+        </div>
 
-      <!-- Organizing Committee -->
-      <div class="space-y-2">
-        <h4 class="font-normal text-gray-900">
-          <span class="text-highlight-yellow">Organizing Committee:</span>
-        </h4>
-        <ul class="list-disc pl-6 space-y-1 text-gray-700">
-          <li>
-            <h4 class="font-normal inline">
-              For festival-related inquiries, please contact the LNCFC Organizing Committee through the official email or contact number above.
-            </h4>
-          </li>
-        </ul>
+        <!-- Venue -->
+        <div class="space-y-2 w-full flex flex-col items-center xl:items-start">
+          <h4 class="font-normal text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px] text-center xl:text-left">
+            <span class="text-highlight-yellow">Venue:</span>
+          </h4>
+          <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+            <li>
+              <h4 class="font-normal inline !text-[16px] md:!text-[20px] lg:!text-[28px]">
+                Saint Louis University Center for Culture and the Arts
+              </h4>
+            </li>
+            <li>
+              <h4 class="font-normal inline !text-[16px] md:!text-[20px] lg:!text-[28px]">
+                SLU Main Campus, Upper Bonifacio Street, Baguio City, Philippines
+              </h4>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Organizing Committee -->
+        <div class="space-y-2 w-full flex flex-col items-center xl:items-start">
+          <h4 class="font-normal text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px] text-center xl:text-left">
+            <span class="text-highlight-yellow">Organizing Committee:</span>
+          </h4>
+          <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+            <li>
+              <h4 class="font-normal inline !text-[16px] md:!text-[20px] lg:!text-[28px]">
+                For festival-related inquiries, please contact the LNCFC Organizing Committee through the official email or contact number above.
+              </h4>
+            </li>
+          </ul>
+        </div>
+
       </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-    <Footer/>
-
-    
-    
+  <Footer/>
 </Layout>

@@ -10,17 +10,17 @@ import Button from '../components/Button.astro';
   <Navbar />
 
   <!-- Hero Section -->
-  <div class="relative w-full min-h-[720px] flex flex-col items-center justify-center overflow-hidden bg-black">
+  <div class="relative w-full min-h-[480px] md:min-h-[600px] lg:min-h-[720px] flex flex-col items-center justify-center overflow-hidden bg-black">
     <img 
       src="/images/application-hero.png" 
       alt="LNCFC Hero Background" 
-      class="absolute inset-0 w-full h-full object-cover z-0 opacity-40" 
+      class="absolute inset-0 w-full h-full object-cover z-0 opacity-20" 
     />
 
     <main class="relative z-10 px-6 text-center">
       <h1 
         style="color: var(--color-text-white);" 
-        class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-8"
+        class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-8 font-headline !text-[32px] md:!text-[48px] lg:!text-[68px] leading-tight"
       >
         Application and Registration
       </h1>
@@ -34,7 +34,7 @@ import Button from '../components/Button.astro';
       <!-- ================= 1. APPLICATION BLOCK ================= -->
       <div class="flex flex-col gap-6 lg:gap-8 w-full">
         <!-- Primary Heading (Aligned Outer Left Edge) -->
-        <h3 class="text-gray-900 font-headline text-left">
+        <h3 class="text-gray-900 font-headline text-left !text-[22px] md:!text-[28px] lg:!text-[36px]">
           Application
         </h3>
 
@@ -43,14 +43,14 @@ import Button from '../components/Button.astro';
 
           <!-- Online Application Form Group -->
           <div class="flex flex-col gap-3">
-            <h4 class="font-bold text-gray-900">
+            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">
               Online Application Form
             </h4>
 
             <ul class="list-disc pl-4 sm:pl-6 space-y-2">
               <li>
-                <h4 class="inline">
-                  Vocal Solo Application Form: {" "}
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
+                  Vocal Solo Application Form:{" "}
                   <a 
                     href="https://forms.gle/zCkFWg1hi3vRbMJC8" 
                     target="_blank" 
@@ -62,8 +62,8 @@ import Button from '../components/Button.astro';
                 </h4>
               </li>
               <li>
-                <h4 class="inline">
-                  Choral Category Application Form: {" "}
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
+                  Choral Category Application Form:{" "}
                   <a 
                     href="https://forms.gle/yqhnPa33SbHsc4AUA" 
                     target="_blank" 
@@ -77,7 +77,7 @@ import Button from '../components/Button.astro';
             </ul>
           </div>
 
-          <h4 class="leading-relaxed">
+          <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
             If the application link does not work, you may compile all 
             required documents in a Google Drive folder and send the folder 
             link to{" "}
@@ -93,28 +93,28 @@ import Button from '../components/Button.astro';
 
           <!-- Upload Requirements (Choir) Group -->
           <div class="flex flex-col gap-3">
-            <h4 class="font-bold text-gray-900">
+            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">
               Upload requirements (Choir)
             </h4>
 
             <ul class="list-disc pl-4 sm:pl-6 space-y-2">
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   A written overview detailing your choir’s background, history, notable achievements, and participation in past competitions (300 words in paragraph).
                 </h4>
               </li>
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   Submit a profile of the choir’s conductor, emphasizing relevant experience, credentials, and professional accomplishments (300 words in paragraph).
                 </h4>
               </li>
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   Recent photos of the choir and a formal, professional photo of the conductor.
                 </h4>
               </li>
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   Video Recording of two (2) songs of different genres recorded within the last six (6) months prior to this application.
                 </h4>
               </li>
@@ -123,25 +123,25 @@ import Button from '../components/Button.astro';
 
           <!-- Upload Requirements (Soloists) Group -->
           <div class="flex flex-col gap-3">
-            <h4 class="font-bold text-gray-900">
+            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">
               Upload requirements (Soloists)
             </h4>
 
             <ul class="list-disc pl-4 sm:pl-6 space-y-2">
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   Two (2) HD photos of yourself to be used as your profile picture.
                 </h4>
               </li>
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   At least one (1) audition video of you singing Original Pilipino Music (OPM) song/s.
                 </h4>
               </li>
             </ul>
           </div>
 
-          <h4 class="leading-relaxed">
+          <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
             Once you have submitted your application form, kindly wait for the completion 
             of the screening process. You will be notified via email once the screening results 
             are finalized. Successful applicants may then proceed with the registration process.
@@ -153,40 +153,40 @@ import Button from '../components/Button.astro';
       <!-- ================= 2. REGISTRATION BLOCK ================= -->
       <div class="flex flex-col gap-6 lg:gap-8 w-full">
         <!-- Primary Heading (Aligned Outer Left Edge) -->
-        <h3 class="text-gray-900 font-headline text-left">
+        <h3 class="text-gray-900 font-headline text-left !text-[22px] md:!text-[28px] lg:!text-[36px]">
           Registration
         </h3>
 
         <!-- Indented Registration Content -->
         <div class="flex flex-col gap-6 w-full text-gray-800 pl-4 sm:pl-8 border-l-2 border-gray-100">
           <div class="flex flex-col gap-3">
-            <h4 class="font-bold text-gray-900">
+            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">
               Payment Instructions
             </h4>
 
             <ul class="list-disc pl-4 sm:pl-6 space-y-2">
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   Open Category: ₱6,000.00 registration fee.
                 </h4>
               </li>
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   Vocal Solo Category: ₱3,000.00 registration fee.
                 </h4>
               </li>
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   Account Name: Lovely Yzhma Heart A. Tiwaquen.
                 </h4>
               </li>
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   Account Number: 005470760171
                 </h4>
               </li>
               <li>
-                <h4 class="inline">
+                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">
                   Bank: BDO Unibank, Inc.
                 </h4>
               </li>
