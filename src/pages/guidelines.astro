@@ -9,11 +9,11 @@ import Button from '../components/Button.astro';
 <Layout title="LNCFC | Guidelines & Mechanics">
   <Navbar/>
 
-  <main>
-    <!-- Hero Section -->
-    <div class="relative w-full min-h-[480px] md:min-h-[600px] lg:min-h-[720px] flex flex-col items-center justify-center overflow-hidden bg-black">
+  <main class="font-sans">
+    <!-- Hero Section (Scaled Down Height & Text) -->
+    <div class="relative w-full min-h-[320px] md:min-h-[420px] lg:min-h-[500px] flex flex-col items-center justify-center overflow-hidden bg-black font-sans">
       <img 
-        src="/images/guidelines-hero.png" 
+        src="/images/guidelines-hero.webp" 
         alt="LNCFC Hero Background" 
         class="absolute inset-0 w-full h-full object-cover z-0 opacity-60" 
       />
@@ -21,7 +21,7 @@ import Button from '../components/Button.astro';
       <div class="relative z-10 px-6 text-center max-w-[1123px] mx-auto">
         <h1 
           style="color: var(--color-text-white);" 
-          class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-8 font-headline !text-[32px] md:!text-[48px] lg:!text-[68px] leading-tight"
+          class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-4 md:mb-6 font-headline !text-[24px] md:!text-[36px] lg:!text-[48px] leading-tight"
         >
           Competition Guidelines & Mechanics
         </h1>
@@ -29,102 +29,102 @@ import Button from '../components/Button.astro';
     </div>
 
     <!-- Categories Section -->
-    <section class="w-full bg-white py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
+    <section class="w-full bg-white py-[40px] px-[20px] lg:py-[90px] lg:px-[50px] font-sans">
       <div class="max-w-[1123px] mx-auto flex flex-col items-start text-left gap-6 lg:gap-8">
 
-        <!-- Primary Headings (Aligned Left Edge) -->
+        <!-- Primary Headings -->
         <div class="flex flex-col gap-2 w-full">
-          <h2 class="text-primary font-headline text-left !text-[28px] md:!text-[36px] lg:!text-[48px]">
+          <h2 class="text-primary font-headline text-left !text-[20px] md:!text-[22px] lg:!text-[26px]">
             Categories
           </h2>
-          <h3 class="text-gray-900 font-headline text-left !text-[22px] md:!text-[28px] lg:!text-[36px]">
+          <h3 class="text-gray-900 font-headline text-left !text-[18px] md:!text-[20px] lg:!text-[24px]">
             Open Choir Category
           </h3>
         </div>
 
-        <!-- Content Block (Indented slightly: pl-4 sm:pl-8) -->
+        <!-- Content Block -->
         <div class="flex flex-col gap-6 w-full text-gray-800 pl-4 sm:pl-8 border-l-2 border-gray-100">
 
           <!-- Eligibility -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">Eligibility</h4>
+            <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">Eligibility</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">The competing choir must have a minimum number of twenty (20) singers and a maximum of forty (40) singers, excluding the conductor.</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">The competing choir must have a minimum number of twenty (20) singers and a maximum of forty (40) singers, excluding the conductor.</p>
               </li>
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">No age limit is set for this category.</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">No age limit is set for this category.</p>
               </li>
             </ul>
           </div>
 
           <!-- Time limit -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">Time limit</h4>
+            <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">Time limit</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">The participating choirs are expected to perform within a maximum duration of twelve (12) minutes per category. The time begins with the first sung note and ends on the last note (pitched or unpitched).</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">The participating choirs are expected to perform within a maximum duration of twelve (12) minutes per category. The time begins with the first sung note and ends on the last note (pitched or unpitched).</p>
               </li>
             </ul>
           </div>
 
           <!-- Repertoire requirements -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">Repertoire requirements</h4>
+            <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">Repertoire requirements</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">One (1) sacred composition from the Baroque Era (1600-1750), Classical Era (1750-1820), or Romantic Era (1800-1910);</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">One (1) sacred composition from the Baroque Era (1600-1750), Classical Era (1750-1820), or Romantic Era (1800-1910);</p>
               </li>
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">One (1) folk song or indigenous music from any other country.</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">One (1) folk song or indigenous music from any other country.</p>
               </li>
             </ul>
           </div>
 
           <!-- Performance rules -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">Performance rules</h4>
+            <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">Performance rules</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">All songs should be performed a cappella.</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">All songs should be performed a cappella.</p>
               </li>
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">All pieces may be accompanied by unpitched instruments.</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">All pieces may be accompanied by unpitched instruments.</p>
               </li>
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">The use of instruments must first be confirmed with the LNCFC Committee Organizers.</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">The use of instruments must first be confirmed with the LNCFC Committee Organizers.</p>
               </li>
             </ul>
           </div>
 
           <!-- Judging criteria -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">Judging criteria</h4>
+            <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">Judging criteria</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">40% - Technical Proficiency (Blending and Balance, Accuracy of Pitch, Intonation and Rhythm, Tone Color and Choral Sound)</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">40% - Technical Proficiency (Blending and Balance, Accuracy of Pitch, Intonation and Rhythm, Tone Color and Choral Sound)</p>
               </li>
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">40% - Artistic Performance (Adherence to the score, Interpretation, Phrasing and Musicality)</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">40% - Artistic Performance (Adherence to the score, Interpretation, Phrasing and Musicality)</p>
               </li>
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">20% - Overall Artistic Impression</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">20% - Overall Artistic Impression</p>
               </li>
             </ul>
           </div>
 
           <!-- Awards -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold text-gray-900 !text-[18px] md:!text-[22px] lg:!text-[30px]">Awards</h4>
+            <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">Awards</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">Champion - Fifty Thousand Pesos (Php 50,000.00) and a Trophy</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">Champion - Fifty Thousand Pesos (Php 50,000.00) and a Trophy</p>
               </li>
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">1st runner up - Forty Thousand Pesos (Php 40,000.00) and a Trophy</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">1st runner up - Forty Thousand Pesos (Php 40,000.00) and a Trophy</p>
               </li>
               <li>
-                <h4 class="text-gray-800 leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">2nd runner up - Thirty Thousand Pesos (Php 30,000.00) and a Trophy</h4>
+                <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">2nd runner up - Thirty Thousand Pesos (Php 30,000.00) and a Trophy</p>
               </li>
             </ul>
           </div>
@@ -135,12 +135,12 @@ import Button from '../components/Button.astro';
     </section>
 
     <!-- Vocal Solo Category Section -->
-    <section class="w-full bg-[#14102B]/60 py-[40px] px-[20px] lg:py-[90px] lg:px-[50px]">
+    <section class="w-full bg-[#14102B]/60 py-[40px] px-[20px] lg:py-[90px] lg:px-[50px] font-sans">
       <div class="max-w-[1123px] mx-auto flex flex-col items-start text-left gap-6 lg:gap-8">
 
         <!-- Subcategory Heading (Aligned Left Edge) -->
         <div class="flex flex-col gap-2 w-full">
-          <h3 class="!text-white font-headline text-left !text-[22px] md:!text-[28px] lg:!text-[36px]">
+          <h3 class="!text-white font-headline text-left !text-[18px] md:!text-[20px] lg:!text-[24px]">
             Vocal Solo Category
           </h3>
         </div>
@@ -150,74 +150,74 @@ import Button from '../components/Button.astro';
 
           <!-- Eligibility -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold !text-white !text-[18px] md:!text-[22px] lg:!text-[30px]">Eligibility</h4>
+            <p class="font-sans font-bold !text-white !text-[15px] sm:!text-[16px] lg:!text-[18px]">Eligibility</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">The Vocal Solo Category is open to non-professional singers aged 12 to 40 years old.</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">The Vocal Solo Category is open to non-professional singers aged 12 to 40 years old.</p>
               </li>
             </ul>
           </div>
 
           <!-- Song requirements -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold !text-white !text-[18px] md:!text-[22px] lg:!text-[30px]">Song requirements</h4>
+            <p class="font-sans font-bold !text-white !text-[15px] sm:!text-[16px] lg:!text-[18px]">Song requirements</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">The song to be rendered is any Original Pilipino Music (OPM) song with a maximum duration of six (6) minutes.</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">The song to be rendered is any Original Pilipino Music (OPM) song with a maximum duration of six (6) minutes.</p>
               </li>
             </ul>
           </div>
 
           <!-- Performance rules -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold !text-white !text-[18px] md:!text-[22px] lg:!text-[30px]">Performance rules</h4>
+            <p class="font-sans font-bold !text-white !text-[15px] sm:!text-[16px] lg:!text-[18px]">Performance rules</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">Performances must be accompanied by a canned music. Live accompaniment is not permitted.</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">Performances must be accompanied by a canned music. Live accompaniment is not permitted.</p>
               </li>
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">The song accompaniment must not contain any lead or backing vocals.</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">The song accompaniment must not contain any lead or backing vocals.</p>
               </li>
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">Songs must be performed in their original key. Transposition is not allowed.</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">Songs must be performed in their original key. Transposition is not allowed.</p>
               </li>
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">Medleys and mash-ups are strictly prohibited.</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">Medleys and mash-ups are strictly prohibited.</p>
               </li>
             </ul>
           </div>
 
           <!-- Judging criteria -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold !text-white !text-[18px] md:!text-[22px] lg:!text-[30px]">Judging criteria</h4>
+            <p class="font-sans font-bold !text-white !text-[15px] sm:!text-[16px] lg:!text-[18px]">Judging criteria</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">30% - Tone Production</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">30% - Tone Production</p>
               </li>
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">30% - Interpretation</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">30% - Interpretation</p>
               </li>
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">30% - Technique</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">30% - Technique</p>
               </li>
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">10% - Overall Performance</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">10% - Overall Performance</p>
               </li>
             </ul>
           </div>
 
           <!-- Awards -->
           <div class="flex flex-col gap-2">
-            <h4 class="font-bold !text-white !text-[18px] md:!text-[22px] lg:!text-[30px]">Awards</h4>
+            <p class="font-sans font-bold !text-white !text-[15px] sm:!text-[16px] lg:!text-[18px]">Awards</p>
             <ul class="list-disc pl-5 space-y-1">
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">Champion - Fifteen Thousand Pesos (Php 15,000) and a Trophy</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">Champion - Fifteen Thousand Pesos (Php 15,000) and a Trophy</p>
               </li>
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">1st runner up - Ten Thousand Pesos (Php 10,000) and a Trophy</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">1st runner up - Ten Thousand Pesos (Php 10,000) and a Trophy</p>
               </li>
               <li>
-                <h4 class="!text-white leading-relaxed !text-[16px] md:!text-[20px] lg:!text-[28px]">2nd runner up - Seven Thousand and Five Hundred Pesos (Php 7,500) and a Trophy</h4>
+                <p class="font-sans !text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">2nd runner up - Seven Thousand and Five Hundred Pesos (Php 7,500) and a Trophy</p>
               </li>
             </ul>
           </div>
