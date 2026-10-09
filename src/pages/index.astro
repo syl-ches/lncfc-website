@@ -77,13 +77,23 @@ import Button from '../components/Button.astro';
       </h2>
     </div>
 
-    <div class="reveal-on-scroll w-full max-w-3xl">
-      <img 
-        src="/images/placeholder.webp" 
-        alt="Festival Highlights" 
-        class="w-full h-[220px] sm:h-[300px] md:h-[360px] object-cover shadow-lg rounded-xl"
-      />
-    </div>
+<div class="reveal-on-scroll relative w-full max-w-3xl overflow-hidden rounded-xl shadow-lg">
+  <video 
+    id="scroll-video"
+    src="/videos/video1.mp4" 
+    loop 
+    muted
+    playsinline
+    class="w-full h-[220px] sm:h-[300px] md:h-[360px] object-cover cursor-pointer"
+  ></video>
+  
+  <button 
+    id="mute-btn" 
+    class="absolute bottom-4 right-4 bg-black/60 hover:bg-black/80 text-white text-xs px-3 py-1.5 rounded-full backdrop-blur-sm transition-all z-10"
+  >
+    🔊 Unmute
+  </button>
+</div>
 
     <div class="reveal-on-scroll flex flex-col gap-3 max-w-3xl w-full font-sans">
       <p class="text-black leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[16px] font-normal font-sans">
@@ -218,6 +228,46 @@ import Button from '../components/Button.astro';
 
     document.querySelectorAll(".reveal-on-scroll, .reveal-left, .reveal-right").forEach((el) => {
       observer.observe(el);
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("scroll-video") as HTMLMediaElement;
+    const muteBtn = document.getElementById("mute-btn");
+
+    if (!video) return;
+
+    const videoObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.play().catch(() => {
+            });
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.5 } 
+    );
+
+    videoObserver.observe(video);
+
+    if (muteBtn) {
+      muteBtn.addEventListener("click", () => {
+        video.muted = !video.muted;
+        muteBtn.textContent = video.muted ? "🔊 Unmute" : "🔇 Mute";
+      });
+    }
+
+    video.addEventListener("click", () => {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
     });
   });
 </script>
