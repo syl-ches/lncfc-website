@@ -21,7 +21,7 @@ import Button from '../components/Button.astro';
       <div class="relative z-10 px-6 text-center max-w-[1123px] mx-auto">
         <h1 
           style="color: var(--color-text-white);" 
-          class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-4 md:mb-6 font-headline !text-[24px] md:!text-[36px] lg:!text-[48px] leading-tight"
+          class="animate-float drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-4 md:mb-6 font-headline !text-[24px] md:!text-[36px] lg:!text-[48px] leading-tight"
         >
           Application and Registration
         </h1>
@@ -30,7 +30,7 @@ import Button from '../components/Button.astro';
 
     <!-- Application & Registration Main Section -->
     <section class="w-full bg-white py-[40px] px-[20px] lg:py-[90px] lg:px-[50px] font-sans">
-      <div class="max-w-[1123px] mx-auto flex flex-col items-start text-left gap-10 lg:gap-14">
+      <div class="reveal-left max-w-[1123px] mx-auto flex flex-col items-start text-left gap-10 lg:gap-14">
 
         <!-- Application Block -->
         <div class="flex flex-col gap-6 lg:gap-8 w-full">
@@ -199,3 +199,23 @@ import Button from '../components/Button.astro';
 
   <Footer />
 </Layout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-active");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll(".reveal-on-scroll, .reveal-left, .reveal-right").forEach((el) => {
+      observer.observe(el);
+    });
+  });
+</script>

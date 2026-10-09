@@ -10,6 +10,7 @@ import Button from '../components/Button.astro';
   <Navbar />
 
   <main class="font-sans">
+    <!-- Hero Section -->
     <div class="relative w-full min-h-[320px] md:min-h-[420px] lg:min-h-[500px] flex flex-col items-center justify-center overflow-hidden bg-primary font-sans">
       <img 
         src="/images/hall-hero.webp" 
@@ -17,7 +18,7 @@ import Button from '../components/Button.astro';
         class="absolute inset-0 w-full h-full object-cover z-0 opacity-75" 
       />
 
-      <div class="relative z-10 px-6 text-center max-w-[1123px] mx-auto">
+      <div class="animate-float relative z-10 px-6 text-center max-w-[1123px] mx-auto">
         <h1 
           style="color: var(--color-text-white);" 
           class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-3 font-headline !text-[24px] md:!text-[36px] lg:!text-[48px] leading-tight text-center"
@@ -47,150 +48,160 @@ import Button from '../components/Button.astro';
 
         <!-- Row 1: 2024 -->
         <div class="flex flex-col gap-6 w-full items-center xl:items-start">
-          <h2 class="text-center xl:text-left font-headline text-gray-900 !text-[24px] md:!text-[32px] lg:!text-[40px] w-full">
+          <h2 class="reveal-on-scroll text-center xl:text-left font-headline text-gray-900 !text-[24px] md:!text-[32px] lg:!text-[40px] w-full">
             <span class="text-highlight-yellow">2024</span>
           </h2>
           
           <div class="flex flex-col xl:flex-row items-center xl:items-start gap-8 xl:gap-12 w-full">
-            <!-- Image -->
-            <div class="w-full xl:w-[571px] shrink-0 flex justify-center">
+            <!-- Image with Scale Animation & Hover Effect -->
+            <div class="reveal-scale group w-full xl:w-[420px] shrink-0 flex justify-center overflow-hidden rounded-xl shadow-lg">
               <img 
                 src="/images/feu.webp" 
                 alt="LNCFC 2024 Winners" 
-                class="w-full max-w-[571px] h-auto object-cover shadow-md mx-auto xl:mx-0 shadow-lg rounded-xl"
+                class="w-full max-w-[420px] h-auto object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
-            <!-- Text Details -->
+            <!-- Staggered Details -->
             <div class="flex flex-col gap-6 w-full text-gray-800 text-center xl:text-left items-center xl:items-start">
-              <div class="space-y-1 w-full flex flex-col items-center xl:items-start">
-                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px] text-center xl:text-left">
+              
+              <!-- 2nd Runner-Up -->
+              <div class="reveal-on-scroll delay-100 space-y-1 w-full flex flex-col items-center xl:items-start">
+                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">
                   <span class="text-highlight-yellow">2nd Runner-Up:</span> University of Baguio Voices Chorale
                 </p>
-                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700">
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Conductor: Mr. John Glenn Gaerlan
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Conductor:</strong> Mr. John Glenn Gaerlan
                     </p>
                   </li>
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Repertoire: Ili-ili by Ily Matthew Maniano; Pal Seo Song by Hyo-Won Woo
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Repertoire:</strong> Ili-ili by Ily Matthew Maniano; Pal Seo Song by Hyo-Won Woo
                     </p>
                   </li>
                 </ul>
               </div>
 
-              <div class="space-y-1 w-full flex flex-col items-center xl:items-start">
-                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px] text-center xl:text-left">
+              <!-- 1st Runner-Up -->
+              <div class="reveal-on-scroll delay-200 space-y-1 w-full flex flex-col items-center xl:items-start">
+                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">
                   <span class="text-highlight-yellow">1st Runner-Up:</span> Tarlac Männerchor
                 </p>
-                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700">
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Conductor: Mr. Jero Anthony Buenviaje
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Conductor:</strong> Mr. Jero Anthony Buenviaje
                     </p>
                   </li>
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Repertoire: Jubilate Deo by Mark Raeniel B. Agpasa; Didn’t my Lord Deliver by Aaron Dale
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Repertoire:</strong> Jubilate Deo by Mark Raeniel B. Agpasa; Didn’t my Lord Deliver by Aaron Dale
                     </p>
                   </li>
                 </ul>
               </div>
 
-              <div class="space-y-1 w-full flex flex-col items-center xl:items-start">
-                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px] text-center xl:text-left">
+              <!-- Grand Champion Highlight Box -->
+              <div class="reveal-on-scroll delay-300 space-y-1 w-full p-4 rounded-xl bg-amber-500/10 border border-amber-400/40 shadow-sm flex flex-col items-center xl:items-start">
+                <p class="font-sans font-bold text-gray-900 !text-[16px] sm:!text-[17px] lg:!text-[19px]">
                   <span class="text-highlight-yellow">Grand Champion:</span> Far Eastern University Chorale
                 </p>
-                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700">
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Conductor: Mr. Roijin Galauran Suarez
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Conductor:</strong> Mr. Roijin Galauran Suarez
                     </p>
                   </li>
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Repertoire: Ang Tren by Saunder Choi; O Magnum Mysterium by Andrej Makor
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Repertoire:</strong> Ang Tren by Saunder Choi; O Magnum Mysterium by Andrej Makor
                     </p>
                   </li>
                 </ul>
               </div>
+
             </div>
           </div>
         </div>
 
         <!-- Row 2: 2025 -->
         <div class="flex flex-col gap-6 w-full items-center xl:items-end">
-          <h2 class="text-center xl:text-right font-headline text-gray-900 !text-[24px] md:!text-[32px] lg:!text-[40px] w-full">
+          <h2 class="reveal-on-scroll text-center xl:text-right font-headline text-gray-900 !text-[24px] md:!text-[32px] lg:!text-[40px] w-full">
             <span class="text-highlight-yellow">2025</span>
           </h2>
           
           <div class="flex flex-col xl:flex-row-reverse items-center xl:items-start gap-8 xl:gap-12 w-full">
-            <!-- Image -->
-            <div class="w-full xl:w-[571px] shrink-0 flex justify-center">
+            <!-- Image with Scale Animation & Hover Effect -->
+            <div class="reveal-scale group w-full xl:w-[420px] shrink-0 flex justify-center overflow-hidden rounded-xl shadow-lg">
               <img 
                 src="/images/bcu.webp" 
                 alt="LNCFC 2025 Winners" 
-                class="w-full max-w-[571px] h-auto object-cover shadow-md mx-auto xl:ml-auto xl:mr-0 shadow-lg rounded-xl"
+                class="w-full max-w-[420px] h-auto object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
-            <!-- Text Details -->
+            <!-- Staggered Details -->
             <div class="flex flex-col gap-6 w-full text-gray-800 text-center xl:text-left items-center xl:items-start">
-              <div class="space-y-1 w-full flex flex-col items-center xl:items-start">
-                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px] text-center xl:text-left">
+              
+              <!-- 2nd Runner-Up -->
+              <div class="reveal-on-scroll delay-100 space-y-1 w-full flex flex-col items-center xl:items-start">
+                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">
                   <span class="text-highlight-yellow">2nd Runner-Up:</span> Tarlac Männerchor
                 </p>
-                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700">
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Conductor: Mr. Darwin B. Vargas
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Conductor:</strong> Mr. Darwin B. Vargas
                     </p>
                   </li>
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Repertoire: Penitensya, Ian Gabriel T. Corpuz; Didn’t My Lord Deliver Daniel by Aaron Dale
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Repertoire:</strong> Penitensya, Ian Gabriel T. Corpuz; Didn’t My Lord Deliver Daniel by Aaron Dale
                     </p>
                   </li>
                 </ul>
               </div>
 
-              <div class="space-y-1 w-full flex flex-col items-center xl:items-start">
-                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px] text-center xl:text-left">
+              <!-- 1st Runner-Up -->
+              <div class="reveal-on-scroll delay-200 space-y-1 w-full flex flex-col items-center xl:items-start">
+                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px]">
                   <span class="text-highlight-yellow">1st Runner-Up:</span> Adamson University Chorale
                 </p>
-                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700">
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Conductor: Mr. John Rufiel G. Aniceto
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Conductor:</strong> Mr. John Rufiel G. Aniceto
                     </p>
                   </li>
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Repertoire: Cum Sancto Spiritus by Hyo Won Woo; Papedsalamat by Nilo Alcala III
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Repertoire:</strong> Cum Sancto Spiritus by Hyo Won Woo; Papedsalamat by Nilo Alcala III
                     </p>
                   </li>
                 </ul>
               </div>
 
-              <div class="space-y-1 w-full flex flex-col items-center xl:items-start">
-                <p class="font-sans font-bold text-gray-900 !text-[15px] sm:!text-[16px] lg:!text-[18px] text-center xl:text-left">
+              <!-- Grand Champion Highlight Box -->
+              <div class="reveal-on-scroll delay-300 space-y-1 w-full p-4 rounded-xl bg-amber-500/10 border border-amber-400/40 shadow-sm flex flex-col items-center xl:items-start">
+                <p class="font-sans font-bold text-gray-900 !text-[16px] sm:!text-[17px] lg:!text-[19px]">
                   <span class="text-highlight-yellow">Grand Champion:</span> Baguio Central University Chamber Choir
                 </p>
-                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700 text-center xl:text-left">
+                <ul class="list-none xl:list-disc pl-0 xl:pl-6 space-y-1 text-gray-700">
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Conductor: Mr. Jomard L. Calamba
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Conductor:</strong> Mr. Jomard L. Calamba
                     </p>
                   </li>
                   <li>
-                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
-                      Repertoire: Māte Saule by Jānis Peters; I Will Lift My Eyes by Zachary J. Moore
+                    <p class="font-sans text-gray-800 leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[17px]">
+                      <strong>Repertoire:</strong> Māte Saule by Jānis Peters; I Will Lift My Eyes by Zachary J. Moore
                     </p>
                   </li>
                 </ul>
               </div>
+
             </div>
           </div>
         </div>
@@ -201,3 +212,23 @@ import Button from '../components/Button.astro';
 
   <Footer />
 </Layout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-active");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll(".reveal-on-scroll, .reveal-left, .reveal-right, .reveal-scale").forEach((el) => {
+      observer.observe(el);
+    });
+  });
+</script>

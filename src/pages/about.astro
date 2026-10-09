@@ -11,7 +11,7 @@ import Footer from "../components/Footer.astro";
   <main class="font-sans">
     <!-- Our Story Section -->
     <section class="w-full bg-white-background py-12 lg:py-24 px-6 sm:px-12 font-sans">
-      <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-8 lg:gap-12">
+      <div class="reveal-on-scroll max-w-6xl mx-auto flex flex-col items-center text-center gap-8 lg:gap-12">
 
         <!-- Title -->
         <h1 class="text-primary font-headline !text-[36px] md:!text-[48px] lg:!text-[68px] leading-tight">
@@ -27,7 +27,7 @@ import Footer from "../components/Footer.astro";
         </p>
 
         <!-- Image 1 (+25% size boost) -->
-        <div class="w-full max-w-2xl mx-auto flex justify-center">
+        <div class="reveal-on-scroll w-full max-w-2xl mx-auto flex justify-center">
           <img 
             src="/images/our-story-1.webp" 
             alt="Light of the North Choral Performance" 
@@ -35,7 +35,7 @@ import Footer from "../components/Footer.astro";
           />
         </div>
 
-        <p class="font-sans text-black leading-relaxed w-full !text-[14px] sm:!text-[15px] lg:!text-[18px]">
+        <p class="reveal-on-scroll font-sans text-black leading-relaxed w-full !text-[14px] sm:!text-[15px] lg:!text-[18px]">
           The inaugural festival was held on November 30, 2024, at Fr. 
           Joseph Van den Daelen, CICM. Center for Culture and the Arts Theater, 
           bringing together 15 participating choirs from numerous provinces, cities, and 
@@ -48,7 +48,7 @@ import Footer from "../components/Footer.astro";
         </p>
 
         <!-- Image 2 (+25% size boost) -->
-        <div class="w-full max-w-2xl mx-auto flex justify-center">
+        <div class="reveal-on-scroll w-full max-w-2xl mx-auto flex justify-center">
           <img 
             src="/images/our-story-2.webp" 
             alt="SLU Choir Ensemble" 
@@ -57,7 +57,7 @@ import Footer from "../components/Footer.astro";
         </div>
 
         <!-- Paragraphs Below Image 2 -->
-        <div class="flex flex-col gap-6 lg:gap-10 w-full">
+        <div class="reveal-on-scroll flex flex-col gap-6 lg:gap-10 w-full">
           <p class="font-sans text-black leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
             Following the success of its inaugural edition, the Light of the North 
             Choral Festival and Competition returned for its second installment with a 
@@ -69,7 +69,7 @@ import Footer from "../components/Footer.astro";
             the festival's presence within the Philippine choral community, reaffirming its role 
             as a growing tradition that celebrates the artistry and dedication of choral musicians.
           </p>
-          <p class="font-sans text-black leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
+          <p class="reveal-on-scroll font-sans text-black leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[18px]">
             To date, the Light of the North Choral Festival and Competition 
             has welcomed 31 participating choirs, bringing together singers, conductors, 
             music educators, and audiences from across the country. Each edition has enriched 
@@ -86,7 +86,7 @@ import Footer from "../components/Footer.astro";
 
     <!-- Vision Section -->
     <section class="w-full bg-[#056F6C] py-12 lg:py-24 px-6 sm:px-12 font-sans">
-      <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-6 lg:gap-8">
+      <div class="reveal-left max-w-6xl mx-auto flex flex-col items-center text-center gap-6 lg:gap-8">
         <h2 class="font-headline text-white !text-[20px] md:!text-[22px] lg:!text-[26px]">
           Vision
         </h2>
@@ -100,7 +100,7 @@ import Footer from "../components/Footer.astro";
 
     <!-- Mission Section -->
     <section class="w-full bg-white-background py-12 lg:py-24 px-6 sm:px-12 font-sans">
-      <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-6 lg:gap-8">
+      <div class="reveal-right max-w-6xl mx-auto flex flex-col items-center text-center gap-6 lg:gap-8">
         <h2 class="font-headline text-black !text-[20px] md:!text-[22px] lg:!text-[26px]">
           Mission
         </h2>
@@ -114,7 +114,7 @@ import Footer from "../components/Footer.astro";
 
     <!-- Organizers Section -->
     <section class="w-full bg-[#E3A743] py-12 lg:py-24 px-6 sm:px-12 font-sans">
-      <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-6 lg:gap-8">
+      <div class="reveal-left max-w-6xl mx-auto flex flex-col items-center text-center gap-6 lg:gap-8">
         <h2 class="font-headline text-white !text-[20px] md:!text-[22px] lg:!text-[26px]">
           Organizers
         </h2>
@@ -127,3 +127,23 @@ import Footer from "../components/Footer.astro";
 
   <Footer />
 </Layout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-active");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll(".reveal-on-scroll, .reveal-left, .reveal-right").forEach((el) => {
+      observer.observe(el);
+    });
+  });
+</script>
