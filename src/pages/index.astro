@@ -20,13 +20,13 @@ import Button from '../components/Button.astro';
     <main class="relative z-10 px-6 max-w-3xl mx-auto text-center">
       <h1 
         style="color: var(--color-text-white);" 
-        class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-3 !text-[20px] sm:!text-[24px] md:!text-[30px] lg:!text-[34px] leading-tight font-bold font-headline"
+        class="animate-float drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] mb-3 !text-[20px] sm:!text-[24px] md:!text-[30px] lg:!text-[34px] leading-tight font-bold font-headline"
       >
         Applications for LNCFC 2026 are Open
       </h1>
       <p 
         style="color: var(--color-text-white);" 
-        class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] !text-[13px] sm:!text-[14px] md:!text-[15px] leading-snug font-normal font-sans"
+        class="animate-float drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] !text-[13px] sm:!text-[14px] md:!text-[15px] leading-snug font-normal font-sans"
       >
         Let our harmonies be one light with the North!
       </p>
@@ -37,7 +37,8 @@ import Button from '../components/Button.astro';
   <section class="w-full bg-white-background py-10 lg:py-12 px-6 sm:px-12 font-sans">
     <div class="max-w-6xl mx-auto grid grid-cols-1 xl:grid-cols-[35%_65%] gap-6 lg:gap-10 items-center text-center xl:text-left">
       
-      <div class="w-full max-w-[360px] xl:max-w-none mx-auto flex justify-center">
+      <!-- Image Wrapper -->
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out w-full max-w-[360px] xl:max-w-none mx-auto flex justify-center">
         <img 
           src="/images/light-of-the-north.webp" 
           alt="LNCFC Event" 
@@ -45,7 +46,8 @@ import Button from '../components/Button.astro';
         />
       </div>
 
-      <div class="flex flex-col gap-3 font-sans">
+      <!-- Text Container -->
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out flex flex-col gap-3 font-sans">
         <p class="text-black leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[16px] font-normal font-sans">
           The <span class="text-highlight-yellow font-semibold">Light of the North Choral Festival and Competition (LNCFC)</span> is a premier national 
           choral event organized by <span class="text-highlight-yellow font-semibold">Saint Louis University</span> through its <span class="text-highlight-yellow font-semibold">
@@ -69,17 +71,21 @@ import Button from '../components/Button.astro';
   <section class="w-full bg-white-background py-10 px-6 sm:px-12 font-sans">
     <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-5">
       
-      <h2 class="font-headline text-black !text-[20px] sm:!text-[22px] lg:!text-[26px]">
-        Revisiting the best of LNCFC 2025
-      </h2>
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out">
+        <h2 class="font-headline text-black !text-[20px] sm:!text-[22px] lg:!text-[26px]">
+          Revisiting the best of LNCFC 2025
+        </h2>
+      </div>
 
-      <img 
-        src="/images/placeholder.webp" 
-        alt="Festival Highlights" 
-        class="w-full max-w-3xl h-[220px] sm:h-[300px] md:h-[360px] object-cover shadow-lg rounded-xl"
-      />
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out w-full max-w-3xl">
+        <img 
+          src="/images/placeholder.webp" 
+          alt="Festival Highlights" 
+          class="w-full h-[220px] sm:h-[300px] md:h-[360px] object-cover shadow-lg rounded-xl"
+        />
+      </div>
 
-      <div class="flex flex-col gap-3 max-w-3xl w-full font-sans">
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out flex flex-col gap-3 max-w-3xl w-full font-sans">
         <p class="text-black leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[16px] font-normal font-sans">
           Last 2025, the Light of the North Choral Festival and Competition 
           brought together 15 outstanding choirs from across the country, each 
@@ -102,56 +108,70 @@ import Button from '../components/Button.astro';
   <section class="w-full bg-[#A75933] py-10 lg:py-12 px-6 sm:px-12 font-sans">
     <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-5">
       
-      <h2 class="font-headline text-white !text-[20px] sm:!text-[22px] lg:!text-[26px]">
-        Sponsors & Partners
-      </h2>
+      <div class="reveal-left opacity-0 translate-y-8 transition-all duration-700 ease-out">
+        <h2 class="font-headline text-white !text-[20px] sm:!text-[22px] lg:!text-[26px]">
+          Sponsors & Partners
+        </h2>
+      </div>
 
-      <p class="text-white leading-relaxed max-w-3xl w-full !text-[14px] sm:!text-[15px] lg:!text-[16px] font-normal font-sans">
-        The Light of the North Choral Festival and Competition is made possible through the generous support and partnership of organizations that share our commitment to advancing choral excellence.
-      </p>
+      <div class="reveal-left opacity-0 translate-y-8 transition-all duration-700 ease-out max-w-3xl w-full">
+        <p class="text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[16px] font-normal font-sans">
+          The Light of the North Choral Festival and Competition is made possible through the generous support and partnership of organizations that share our commitment to advancing choral excellence.
+        </p>
+      </div>
 
-      <img 
-        src="/images/sponsors-img-row.webp" 
-        alt="Sponsors and Partners Logos" 
-        class="w-full max-w-3xl h-auto object-contain"
-      />
+      <div class="reveal-left opacity-0 translate-y-8 transition-all duration-700 ease-out">
+        <img 
+          src="/images/bcc-logo.webp" 
+          alt="Sponsors and Partners Logos" 
+          class="w-full max-w-xs sm:max-w-sm h-auto object-contain"
+        />
+      </div>
       
     </div>
   </section>
 
-<!-- Application Period Section -->
-<section class="w-full bg-white-background py-8 sm:py-10 px-4 sm:px-12 font-sans">
-  <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-4 sm:gap-6">
-    
-    <h2 class="font-headline text-black !text-[20px] sm:!text-[22px] lg:!text-[26px]">
-      Application Period
-    </h2>
+  <!-- Application Period Section -->
+  <section class="w-full bg-white-background py-8 sm:py-10 px-4 sm:px-12 font-sans">
+    <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-4 sm:gap-6">
+      
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out">
+        <h2 class="font-headline text-black !text-[20px] sm:!text-[22px] lg:!text-[26px]">
+          Application Period
+        </h2>
+      </div>
 
-    <!-- Scaled Image for Mobile -->
-    <img 
-      src="/images/deadline-application.webp" 
-      alt="Festival Highlights" 
-      class="w-[85%] max-w-[280px] sm:max-w-[400px] lg:max-w-[480px] h-auto object-cover shadow-md rounded-xl"
-    />
+      <!-- Scaled Image for Mobile -->
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out flex justify-center w-full">
+        <img 
+          src="/images/deadline-application.webp" 
+          alt="Festival Highlights" 
+          class="w-[85%] max-w-[280px] sm:max-w-[400px] lg:max-w-[480px] h-auto object-cover shadow-md rounded-xl"
+        />
+      </div>
 
-    <p class="text-black leading-relaxed max-w-3xl w-full !text-[14px] sm:!text-[15px] lg:!text-[16px] font-normal font-sans">
-      Applications for the Light of the North Choral Festival and Competition 2026 
-      will be accepted from <span class="text-highlight-yellow font-semibold">June 10, 2026, to August 30, 2026</span>. Interested choirs are 
-      encouraged to submit their applications within the registration period to secure 
-      their participation in this year's festival.
-    </p>
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out max-w-3xl w-full">
+        <p class="text-black leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[16px] font-normal font-sans">
+          Applications for the Light of the North Choral Festival and Competition 2026 
+          will be accepted from <span class="text-highlight-yellow font-semibold">June 10, 2026, to August 30, 2026</span>. Interested choirs are 
+          encouraged to submit their applications within the registration period to secure 
+          their participation in this year's festival.
+        </p>
+      </div>
 
-    <Button href="/application">
-      Submit an Application
-    </Button>
-  </div>
-</section>
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out">
+        <Button href="/application">
+          Submit an Application
+        </Button>
+      </div>
+    </div>
+  </section>
 
   <!-- Venue Highlights Section -->
   <section class="w-full bg-[#E3A743] py-10 lg:py-12 px-6 sm:px-12 font-sans">
     <div class="max-w-6xl mx-auto flex flex-col gap-8">
 
-      <div class="w-full text-center xl:text-left">
+      <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out w-full text-center xl:text-left">
         <h2 class="font-headline text-white !text-[20px] sm:!text-[22px] lg:!text-[26px]">
           Venues
         </h2>
@@ -159,7 +179,7 @@ import Button from '../components/Button.astro';
 
       <!-- Content Row 1 -->
       <div class="grid grid-cols-1 xl:grid-cols-[35%_65%] gap-6 lg:gap-10 items-center text-center xl:text-left font-sans">
-        <div class="w-full max-w-[360px] xl:max-w-none mx-auto flex justify-center">
+        <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out w-full max-w-[360px] xl:max-w-none mx-auto flex justify-center">
           <img 
             src="/images/pb-gym.webp" 
             alt="Prince Bernhard Gymnasium" 
@@ -167,7 +187,7 @@ import Button from '../components/Button.astro';
           />
         </div>
 
-        <div class="flex flex-col gap-3 font-sans">
+        <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out flex flex-col gap-3 font-sans">
           <p class="text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[16px] font-normal font-sans">
             The 2026 Light of the North Choral Festival and Competition will be held across two premier performance venues at Saint Louis University, Baguio City, each carefully selected to provide an exceptional experience for participants and audiences alike.
           </p>
@@ -179,7 +199,7 @@ import Button from '../components/Button.astro';
 
       <!-- Content Row 2 -->
       <div class="grid grid-cols-1 xl:grid-cols-[65%_35%] gap-6 lg:gap-10 items-center text-center xl:text-left font-sans">
-        <div class="flex flex-col gap-3 order-2 xl:order-1 font-sans">
+        <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out flex flex-col gap-3 order-2 xl:order-1 font-sans">
           <p class="text-white leading-relaxed !text-[14px] sm:!text-[15px] lg:!text-[16px] font-normal font-sans">
             Meanwhile, the Vocal Solo Category will be hosted at the Fr. Joseph Van Den Daelen, CICM Center for Culture and the Arts Theatre, an intimate performance space renowned for its excellent acoustics and concert hall atmosphere, offering an ideal setting for solo vocal performances.
           </p>
@@ -188,7 +208,7 @@ import Button from '../components/Button.astro';
           </p>
         </div>
 
-        <div class="w-full max-w-[360px] xl:max-w-none mx-auto flex justify-center order-1 xl:order-2">
+        <div class="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out w-full max-w-[360px] xl:max-w-none mx-auto flex justify-center order-1 xl:order-2">
           <img 
             src="/images/jvdd-theatre.webp" 
             alt="Fr. Joseph Van Den Daelen CCA Theatre" 
@@ -201,4 +221,46 @@ import Button from '../components/Button.astro';
   </section>
 
   <Footer/>
+
+  <style>
+    /* Floating animation for H1 */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
 </Layout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Standard fade up
+            entry.target.classList.remove("opacity-0", "translate-y-8");
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            
+            // Custom class toggle
+            entry.target.classList.add("reveal-active");
+
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll(".reveal-on-scroll, .reveal-left, .reveal-right, .reveal-zoom, .reveal-blur").forEach((el) => {
+      observer.observe(el);
+    });
+  });
+</script>
